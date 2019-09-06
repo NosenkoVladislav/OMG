@@ -829,6 +829,12 @@ html {
           font-weight: 800; }
         .page_case .results .table .col .text {
           font-size: 30px; }
+      .page_case .results .table.table_two {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: 80px auto 0 auto; }
+        .page_case .results .table.table_two .col:nth-child(2) {
+          border-right: 2px solid var(--mBlack); }
   .page_case .reviews {
     padding: 80px; }
     .page_case .reviews .container .review {
