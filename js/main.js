@@ -114,3 +114,11 @@ $('.mfp-close').click(function () {
 $('#doNotClick').click(function () {
     $('.case_box').addClass('active')
 })
+
+$('.menu_btn').click(function () {
+    $('.nav_menu--mob').addClass('open')
+})
+
+$('.menu_close').click(function () {
+    $('.nav_menu--mob').removeClass('open')
+})

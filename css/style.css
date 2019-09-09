@@ -53,7 +53,8 @@ html {
     font-size: 30px;
     line-height: 1.1em;
     font-weight: 200;
-    margin-top: 0.3em; }
+    margin-top: 0.3em;
+    text-transform: none; }
 
 .badge {
   display: flex;
@@ -165,7 +166,21 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--mBlack);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    z-index: 3; }
+    .header .header_top .container {
+      min-height: auto;
+      flex-direction: row;
+      justify-content: space-between; }
     .header .header_top .logo .logo_svg {
       width: 80px; }
     .header .header_top .nav_menu {
@@ -185,11 +200,16 @@ html {
           color: var(--mBlack);
           background: #fff;
           border: 1px solid var(--mBlack); }
+    .header .header_top .menu_btn {
+      display: none; }
+    .header .header_top .nav_menu--mob {
+      display: none; }
   .header .header_body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 100px; }
     .header .header_body .header_title__wrap .title_l {
       font-size: 130px;
       margin-bottom: 0.07em; }
@@ -200,7 +220,7 @@ html {
       font-size: 40px;
       margin-top: 0.6em; }
     .header .header_body .header_btn__wrap {
-      margin-top: 64px; }
+      margin: 64px; }
       .header .header_body .header_btn__wrap .btn {
         font-size: 30px;
         padding: 16px;
@@ -376,6 +396,10 @@ html {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .clients .c-list .item img {
+        width: 200px; }
+      .clients .c-list .item.lg img {
+        width: 320px; }
   .clients .line {
     bottom: 0;
     left: 0; }
@@ -442,6 +466,16 @@ html {
 .footer {
   padding: 80px 0 40px 0; }
 
+.page_contacts {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .page_contacts .header {
+    flex-grow: 1; }
+  .page_contacts .container {
+    height: 100%;
+    min-height: auto; }
+
 .contacts_cols {
   display: grid;
   grid-template-columns: 40% repeat(3, 20%);
@@ -486,7 +520,8 @@ html {
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 999; }
     .popup-container .popup-close svg {
       width: 14px; }
   .popup-container .title {
@@ -504,7 +539,10 @@ html {
     color: #7E7E7E;
     font-size: 25px;
     outline: none !important;
-    position: relative; }
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
     .popup-container .input.err {
       background: red;
       color: #fff; }
