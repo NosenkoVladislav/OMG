@@ -416,8 +416,24 @@ html {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .clients .c-list .item:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
       .clients .c-list .item img {
-        width: 200px; }
+        width: 200px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: ease-in-out .1s;
+        -moz-transition: ease-in-out .1s;
+        -ms-transition: ease-in-out .1s;
+        -o-transition: ease-in-out .1s;
+        transition: ease-in-out .1s; }
       .clients .c-list .item.lg img {
         width: 320px; }
   .clients .line {
