@@ -322,8 +322,14 @@
         </div>
         <div class="title">напишите нам</div>
         <form class="form">
-            <input type="text" class="input" placeholder="Телефон или почта" name="nameOrMail">
-            <input type="text" class="input" placeholder="Сообщение" name="message">
+            <div class="row">
+                <input type="text" class="input" placeholder="Телефон или почта" name="nameOrMail">
+                <div class="err_block">Пустое поле — заполните</div>
+            </div>
+            <div class="row">
+                <input type="text" class="input" placeholder="Сообщение" name="message">
+                <div class="err_block">Пустое поле — заполните</div>
+            </div>
             <button class="btn black">отправить</button>
         </form>
     </div>

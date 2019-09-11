@@ -86,10 +86,84 @@ $('.caseInWork').click(function () {
     })
 });
 
-$('.form').submit(function (e) {
+// $('.form').submit(function (e) {
+//     e.preventDefault();
+//     let fields = $(this).find('input');
+//     let err = [];
+//     for( let i = 0; i < fields.length; i++) {
+//         if(!fields[i].value) {
+//             $(fields[i]).addClass('err');
+//             err.push(fields[i])
+//         } else {
+//             $(fields[i]).removeClass('err');
+//             err = $.grep(err, fields[i])
+//         }
+//     }
+//
+//     if(err.length === 0) {
+//         var fd = new FormData( this );
+//         $.ajax({
+//             url: 'index.php',
+//             type: 'POST',
+//             contentType: false,
+//             processData: false,
+//             data: fd,
+//             success: function(msg){
+//                 $.magnificPopup.close();
+//             }
+//         });
+//         //TODO clear all form fields
+//         //TODO ajax request to submit
+//     }
+// });
+
+
+$('#contactUsPop').find('form').submit(function (e) {
     e.preventDefault();
-    let fields = $(this).find('input');
     let err = [];
+    formValidation();
+
+    if(err.length === 0) {
+        var fd = new FormData( this );
+        $.ajax({
+            url: 'index.php',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: fd,
+            success: function(msg){
+                $.magnificPopup.close();
+            }
+        });
+        //TODO clear all form fields
+        //TODO ajax request to submit
+    }
+});
+
+$('#vacancyForm').submit(function (e) {
+    e.preventDefault();
+    let err = [];
+    formValidation();
+
+    if(err.length === 0) {
+        var fd = new FormData( this );
+        $.ajax({
+            url: 'vacancy.php',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: fd,
+            success: function(msg){
+                $.magnificPopup.close();
+            }
+        });
+        //TODO clear all form fields
+        //TODO ajax request to submit
+    }
+});
+
+function formValidation(err) {
+    let fields = $(this).find('input');
     for( let i = 0; i < fields.length; i++) {
         if(!fields[i].value) {
             $(fields[i]).addClass('err');
@@ -99,13 +173,7 @@ $('.form').submit(function (e) {
             err = $.grep(err, fields[i])
         }
     }
-
-    if(err.length === 0) {
-        $(this).submit();
-        //TODO clear all form fields
-        //TODO ajax request to submit
-    }
-});
+}
 
 $('.mfp-close').click(function () {
     $.magnificPopup.close();
