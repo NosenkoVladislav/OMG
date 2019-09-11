@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div class="page portfolio">
+<div class="page portfolio" id="pageTop">
     <header class="header scroll_section">
         <div class="container">
             <div class="header_top">
@@ -68,16 +68,48 @@
                     <div class="title_m">Портфолио</div>
                 </div>
                 <div class="header_btn__wrap">
-                    <button class="btn white contactUsPop">
-                        написать нам
+                    <button class="btn white" id="doNotClick">
+                        не нажимать
                     </button>
+                    <div class="case_box">
+                        <div class="case_item case_item--1">
+                            <div class="case_text">
+                                Не кейсы, а, мать его, произведения искусства
+                            </div>
+                            <div class="badge sm">
+                                <div class="dot"></div>
+                                <div class="text">наш подход</div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="case_item case_item--2">
+                            <div class="case_text">
+                                Мы, конечно, не хвастаемся но кейсы о**енные.
+                            </div>
+                            <div class="badge sm">
+                                <div class="dot"></div>
+                                <div class="text">наш подход</div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="case_item case_item--3">
+                            <div class="case_text">
+                                Не кейсы, а, мать его, произведения искусства
+                            </div>
+                            <div class="badge sm">
+                                <div class="dot"></div>
+                                <div class="text">наш подход</div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--<div class="header_lines">-->
-        <!--<div class="line yellow">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •</div>-->
-        <!--<div class="line white">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •</div>-->
-        <!--</div>-->
+        <div class="header_lines">
+        <div class="line yellow">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •</div>
+        <div class="line white">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •</div>
+        </div>
     </header>
 
     <section class="cases scroll_section">
@@ -86,20 +118,20 @@
                 кейсы
             </div>
             <div class="cases_taglist">
-                <div class="tag btn white">видеопродакшн</div>
-                <div class="tag btn white">медиапроект</div>
-                <div class="tag btn white">под ключ</div>
-                <div class="tag btn white">стратегия</div>
-                <div class="tag btn white">медиааудит</div>
-                <div class="tag btn white">таргетинг</div>
-                <div class="tag btn white">медиабаинг</div>
-                <div class="tag btn white">смм</div>
-                <div class="tag btn white caseInWork">диджитал-маркетинг</div>
-                <div class="tag btn white caseInWork">инфлюенсер-маркетинг</div>
-                <div class="tag btn white caseInWork">контент-маркетинг</div>
+                <div class="tag btn white" id="videoProd">видеопродакшн</div>
+                <div class="tag btn white" id="mediaProject">медиапроект</div>
+                <div class="tag btn white" id="allIn">под ключ</div>
+                <div class="tag btn white" id="strategy">стратегия</div>
+                <div class="tag btn white" id="mediaAudit">медиааудит</div>
+                <div class="tag btn white" id="targeting">таргетинг</div>
+                <div class="tag btn white" id="mediaBuying">медиабаинг</div>
+                <div class="tag btn white" id="smm">смм</div>
+                <div class="tag btn white caseInWork" id="digitalMarket">диджитал-маркетинг</div>
+                <div class="tag btn white caseInWork" id="influenceMarket">инфлюенсер-маркетинг</div>
+                <div class="tag btn white caseInWork" id="contentMarket">контент-маркетинг</div>
             </div>
             <div class="cases_gallery">
-                <a href="allo.html" class="case">
+                <a href="allo.html" class="case" data-case="videoProd strategy mediaBuying">
                     <div class="image grayScale">
                         <img src="assets/img/cases/allo_thumb.png" alt="">
                     </div>
@@ -112,7 +144,7 @@
                         <div class="name">АЛЛО</div>
                     </div>
                 </a>
-                <a href="macdonalds.html" class="case">
+                <a href="macdonalds.html" class="case" data-case="videoProd strategy mediaBuying">
                     <div class="image grayScale">
                         <img src="assets/img/cases/mac_thumb.png" alt="">
                     </div>
@@ -125,7 +157,7 @@
                         <div class="name">McDonald’s</div>
                     </div>
                 </a>
-                <a href="kyivstar.html" class="case">
+                <a href="kyivstar.html" class="case" data-case="videoProd strategy mediaBuying">
                     <div class="image grayScale">
                         <img src="assets/img/cases/kyiv_thumb.png" alt="">
                     </div>
@@ -138,7 +170,7 @@
                         <div class="name">КИЇВСТАР</div>
                     </div>
                 </a>
-                <a href="olx.html" class="case">
+                <a href="olx.html" class="case" data-case="videoProd strategy mediaBuying">
                     <div class="image grayScale">
                         <img src="assets/img/cases/olx_thumb.png" alt="">
                     </div>
@@ -151,7 +183,7 @@
                         <div class="name">OLX</div>
                     </div>
                 </a>
-                <a href="mastercard.html" class="case">
+                <a href="mastercard.html" class="case" data-case="videoProd mediaBuying">
                     <div class="image">
                         <img src="assets/img/cases/master_thumb.png" alt="">
                     </div>
@@ -164,7 +196,7 @@
                         <div class="name">MASTERCARD</div>
                     </div>
                 </a>
-                <a href="shark.html" class="case">
+                <a href="shark.html" class="case" data-case=" strategy mediaBuying">
                     <div class="image">
                         <img src="assets/img/cases/shark_thumb.png" alt="">
                     </div>
@@ -184,43 +216,49 @@
 
     <section class="clients">
         <div class="container">
-            <div class="section_title">нам доверились</div>
+            <div class="section_title">нам доверились
+                <div class="badge yellow sm">
+                    <div class="dot"></div>
+                    <div class="text">oh my god</div>
+                    <div class="dot"></div>
+                </div>
+            </div>
             <div class="c-list">
-                <div class="item">
-                    <img src="assets/img/allo_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/allo_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/kyiv_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/kyivstar_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/mac_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/mac_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/baya_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/baya_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/lety_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/lety_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/acer_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/acer_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/axe_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/uniliver_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/google_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/google_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/pari_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/pari_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/master_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/master_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/film_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/film_c.png" alt="">
                 </div>
-                <div class="item">
-                    <img src="assets/img/olx_c.jpg" alt="">
+                <div class="item grayScale">
+                    <img src="assets/img/olx_c.png" alt="">
                 </div>
             </div>
         </div>
@@ -249,6 +287,11 @@
                 </div>
             </div>
         </div>
+        <a href="#pageTop" class="to_top">
+            <svg width="29" height="87" viewBox="0 0 29 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.151 1.49838L0.423096 14.2263L3.25152 17.0547L12.5652 7.74103L12.5652 86.9126H16.5652L16.5652 7.74103L25.8789 17.0547L28.7074 14.2263L15.9794 1.49838L14.5652 0.112595L13.151 1.49838Z" fill="white"/>
+            </svg>
+        </a>
     </footer>
 
 </div>

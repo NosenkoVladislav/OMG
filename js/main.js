@@ -111,9 +111,9 @@ $('.mfp-close').click(function () {
     $.magnificPopup.close();
 })
 
-$('#doNotClick').click(function () {
-    $('.case_box').addClass('active')
-})
+// $('#doNotClick').click(function () {
+//     $('.case_box').addClass('active')
+// })
 
 $('.menu_btn').click(function () {
     $('.nav_menu--mob').addClass('open')
@@ -122,3 +122,40 @@ $('.menu_btn').click(function () {
 $('.menu_close').click(function () {
     $('.nav_menu--mob').removeClass('open')
 })
+
+function doNotClick() {
+    $(document).click(function (ev) {
+        if(ev.target.id === 'doNotClick') {
+            showCaseItem();
+        } else {
+            $('.case_box').removeClass('active')
+            $('.case_item').each(function () {
+                $(this).removeClass('active')
+            })
+        }
+    })
+}
+
+function showCaseItem() {
+    var caseItem = Math.floor((Math.random() * 3) + 1);
+    console.log(caseItem)
+    $('.case_box').addClass('active')
+    $('.case_item--' + caseItem).addClass('active')
+}
+
+doNotClick()
+
+
+function targetedScroll(id) {
+    // scrollTop is either the top offset of the element whose id is passed, or 0
+    var scrollTop = id ? $('#' + id).offset().top : 0;
+
+    $('body,html').animate({
+        scrollTop: scrollTop,
+    }, 500);
+}
+
+$('.to_top').on('click', function(event) {
+    event.preventDefault();
+    targetedScroll('pageTop');
+});

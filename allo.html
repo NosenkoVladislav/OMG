@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo-favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
 <div class="page page_case">
-    <header class="header scroll_section">
+    <header class="header scroll_section" id="pageTop">
         <div class="container">
             <div class="header_top">
-                <a href="index.html" class="logo">
+                <div class="container">
+                    <a href="index.html" class="logo">
                     <svg width="79" height="40" viewBox="0 0 79 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="79" height="40" fill="url(#pattern0)"/>
                         <defs>
@@ -28,26 +32,50 @@
                         </defs>
                     </svg>
                 </a>
-                <nav class="nav_menu">
-                    <a href="index.html" class="nav_item">агентство</a>
-                    <a href="portfolio.html" class="nav_item">портфолио</a>
-                    <a href="media.html" class="nav_item">медиапартнеры</a>
-                    <a href="contacts.html" class="nav_item">контакты</a>
-                </nav>
+
+                    <div class="menu_btn">
+                        <div class="menu_line"></div>
+                        <div class="menu_line"></div>
+                        <div class="menu_line"></div>
+                    </div>
+
+                    <nav class="nav_menu">
+                        <a href="index.html" class="nav_item">агентство</a>
+                        <a href="portfolio.html" class="nav_item">портфолио</a>
+                        <a href="media.html" class="nav_item">медиапартнеры</a>
+                        <a href="contacts.html" class="nav_item">контакты</a>
+                    </nav>
+
+                    <div class="nav_menu--mob">
+                        <div class="nav_menu--wrapper">
+                            <nav class="nav_menu">
+                                <a href="index.html" class="nav_item">агентство</a>
+                                <a href="portfolio.html" class="nav_item">портфолио</a>
+                                <a href="media.html" class="nav_item">медиапартнеры</a>
+                                <a href="contacts.html" class="nav_item">контакты</a>
+                            </nav>
+                            <div class="menu_close">
+                                <div class="menu_line"></div>
+                                <div class="menu_line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="header_body">
                 <div class="case_logo">
-                    <img src="assets/img/cases/kyivstar_logo.png" alt="kyivstar">
+                    <img src="assets/img/cases/allo_logo.png" alt="allo">
                 </div>
                 <div class="case_about">
-                    <div class="title">Київстар</div>
+                    <div class="title">Алло</div>
                     <div class="tag_list">
                         <div class="tag btn black">стратегия</div>
                         <div class="tag btn black">медиабаинг</div>
                         <div class="tag btn black">видеопродакшн</div>
                     </div>
                     <div class="case_text">
-                        Компания “Київстар” — наши ключевые партнеры в 2019 году. Любим их всем сердцем!
+                        “Алло” — наши друзья уже более года, первостепенная задача для нас была — анонс новинок и привлечение подписчиков на их канал Youtube. Сотрудничество с брендом мы начали
+                        в феврале 2018 года.
                     </div>
                 </div>
             </div>
@@ -63,9 +91,15 @@
             </div>
             <div class="block_bordered">
                 <div class="row">
-                    <div class="num"></div>
+                    <div class="num">01</div>
                     <div class="text">
-                        С 3 Декабря  2018 года “Київстар” анонсировал крупную новогоднюю акцию “Безлімітний 4G кожному до свят”. Стояла задача интегрировать это как новогодний подарок каждому украинцу от “Київстар”.
+                        Прописать и реализовать органичную механику внедрения в сюжет локации магазина и проявления бренды. KPI — обеспечить масимальную виральность интеграции (свыше 10 млн просмотров)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="num">02</div>
+                    <div class="text">
+                        Сделать прирост подписчиков на канал Алло. KPI — от 20 тыс подписчиков
                     </div>
                 </div>
             </div>
@@ -81,13 +115,20 @@
             </div>
             <div class="flex_block">
                 <div class="block_bordered">
-                    Снять социальный ролик на тему новогодней ностальгии поколения Y.  Интегрировать бренд в месседж развития технологий в Украине (Раньше — WAP, GPRS — сейчас бесплатный и безлимитный 4G всем украинцам).
+                    Побрейнштормили и решили сделать еще один вирусный ролик — пародию. Как внедрить нативно бренд Алло? Легко!
+                    Интегрируем локацию магазина “Алло”  в сюжет музыкального клипа.  Вызываем ценность определенного продукта за счет сюжетного поворота истории ролика. Ох, это было горячо”
                 </div>
                 <div class="solution_location">
                     <div class="title">Площадка продвижения</div>
                     <div class="location">YouTube</div>
+
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="player_section">
+        <div class="container">
             <div class="player">
                 <div class="badge_wrapper">
                     <div class="badge yellow sm">
@@ -98,24 +139,10 @@
                 </div>
                 <div class="video">
                     <iframe
-                            src="https://www.youtube.com/embed/On2PmjmfVKY"
+                            src="https://www.youtube.com/embed/O8XKiqG-OB0?rel=0"
                             frameborder="0" id="case_player"
                             class="case-player">
                     </iframe>
-                </div>
-            </div>
-            <div class="centred_block">
-                <div class="block_bordered">
-                    <div class="text">
-                        В тексте песни звучало — “2G Ще не було в помінє, а зараз їх вже АЖ ЧЕТИРЄ”  во время сравнения детства 2000-х и наступающего 2019-го года.
-                        Это привлекло внимание к бренду и к его Новогодней акции среди молодой интернет-аудитории в возрасте 18-26 лет.
-
-                    </div>
-                    <div class="badge black sm">
-                        <div class="dot"></div>
-                        <div class="text">инсайт</div>
-                        <div class="dot"></div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -130,7 +157,7 @@
             </div>
             <div class="table">
                 <div class="col">
-                    <div class="title">13+ млн</div>
+                    <div class="title">25+ млн</div>
                     <div class="text">просмотров</div>
                     <div class="badge yellow sm">
                         <div class="dot"></div>
@@ -139,12 +166,30 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="title">660+ тыс</div>
-                    <div class="text">подписчиков лайкнули этот ролик</div>
+                    <div class="title">1,5+ млн</div>
+                    <div class="text">кликов</div>
                 </div>
                 <div class="col">
-                    <div class="title">45+ тыс</div>
-                    <div class="text">юзеров написали свой комментарий под этим роликом</div>
+                    <div class="title">50+ тыс </div>
+                    <div class="text">подписчиков с одного ролика</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="badge black">
+                <div class="dot"></div>
+                <div class="text">отзывы</div>
+                <div class="dot"></div>
+            </div>
+            <div class="review">
+                <div class="text">ТОП-менеджер "Алло"
+                    о нашей первой коллаборации на своей странице Facebook:
+                </div>
+                <div class="image">
+                    <img src="assets/img/cases/dummyPic.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -156,41 +201,35 @@
             <div class="table">
                 <div class="col">
                     <div class="row">
-                        <div class="title">Digital стратегия
-                            PR департамент Киевстар:</div>
+                        <div class="title">АЛЛО: </div>
                         <div class="list">
-                            <div class="item">Директор корпоративных коммуникаций Киевстар: Анна Захараш</div>
-                            <div class="item">Менеджер по связям с общественностью: Александр Фесенко</div>
+                            <div class="item">Chief digital officer:Андрей Ториков</div>
+                            <div class="item">Editor in chief: Евгений Брехов</div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="title">OMG AGENCY:</div>
+                        <div class="title">Стратегия продвижения на Youtube
+                            OMG  boost: </div>
                         <div class="list">
-                            <div class="item">Менеджер по связям с общественностью: Дима Дюжев</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="title">Стратегия продвижения на Youtube OMG  boost:</div>
-                        <div class="list">
-                            <div class="item">Executive director: Дмитрий Дюжев, Александр Бородавка</div>
+                            <div class="item">Executive director: Дмитрий Дюжев, Александр Бородавка
+                            </div>
                             <div class="item">Promotion manager: Павел Морозов</div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="title">Блогеры для рекламы:</div>
+                        <div class="title">Блогеры для рекламы</div>
                         <div class="list">
-                            <div class="item">OMG influence </div>
+                            <div class="item">Блогеры для рекламы</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="row">
                         <div class="title">Продакшн
-                            Чоткий Паца Production:</div>
+                            Чоткий Паца Production</div>
                         <div class="list">
                             <div class="item">Режиссер: Константин Клепка</div>
-                            <div class="item">Второй режиссер: Нелюбин Константин</div>
-                            <div class="item">Исполнительный продюсер: Антон Скуратов</div>
+                            <div class="item">Исполнителный продюсер: Антон Скуратов</div>
                             <div class="item">Операторы: Владислав Федосов; Александр Калина</div>
                             <div class="item">Гаффер: Андрей Болотин</div>
                         </div>
@@ -213,7 +252,7 @@
                 </div>
             </div>
             <div class="to_all">
-                <a href="portfolio.html" class="link">
+                <a href="#" class="link">
                 <span class="arr">
                     <svg width="88" height="29" viewBox="0 0 88 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M86.2142 12.7279L73.4863 0L70.6579 2.82843L79.9716 12.1421H0.799988V16.1421H79.9716L70.6579 25.4558L73.4863 28.2843L86.2142 15.5563L87.6 14.1421L86.2142 12.7279Z" fill="#F4FE31"></path>
@@ -248,6 +287,11 @@
                 </div>
             </div>
         </div>
+        <a href="#pageTop" class="to_top">
+            <svg width="29" height="87" viewBox="0 0 29 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.151 1.49838L0.423096 14.2263L3.25152 17.0547L12.5652 7.74103L12.5652 86.9126H16.5652L16.5652 7.74103L25.8789 17.0547L28.7074 14.2263L15.9794 1.49838L14.5652 0.112595L13.151 1.49838Z" fill="white"/>
+            </svg>
+        </a>
     </footer>
 
 </div>
