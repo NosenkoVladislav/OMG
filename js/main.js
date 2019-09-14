@@ -86,37 +86,6 @@ $('.caseInWork').click(function () {
     })
 });
 
-// $('.form').submit(function (e) {
-//     e.preventDefault();
-//     let fields = $(this).find('input');
-//     let err = [];
-//     for( let i = 0; i < fields.length; i++) {
-//         if(!fields[i].value) {
-//             $(fields[i]).addClass('err');
-//             err.push(fields[i])
-//         } else {
-//             $(fields[i]).removeClass('err');
-//             err = $.grep(err, fields[i])
-//         }
-//     }
-//
-//     if(err.length === 0) {
-//         var fd = new FormData( this );
-//         $.ajax({
-//             url: 'index.php',
-//             type: 'POST',
-//             contentType: false,
-//             processData: false,
-//             data: fd,
-//             success: function(msg){
-//                 $.magnificPopup.close();
-//             }
-//         });
-//         //TODO clear all form fields
-//         //TODO ajax request to submit
-//     }
-// });
-
 
 $('#contactUsPop').find('form').submit(function (e) {
     e.preventDefault();
@@ -179,16 +148,14 @@ $('.mfp-close').click(function () {
     $.magnificPopup.close();
 })
 
-// $('#doNotClick').click(function () {
-//     $('.case_box').addClass('active')
-// })
-
 $('.menu_btn').click(function () {
     $('.nav_menu--mob').addClass('open')
+    $('body').css('overflow','hidden')
 })
 
 $('.menu_close').click(function () {
     $('.nav_menu--mob').removeClass('open')
+    $('body').css('overflow','visible')
 })
 
 function doNotClick() {
@@ -227,3 +194,28 @@ $('.to_top').on('click', function(event) {
     event.preventDefault();
     targetedScroll('pageTop');
 });
+
+
+//case filtration
+
+function caseFilration() {
+    var selectedTags = [];
+
+    $('.tag').click(function () {
+        var tagID = $(this).attr('id');
+        if($.inArray(tagID, selectedTags) === -1) {
+            selectedTags.push(tagID);
+        } else {
+            selectedTags = $.grep(selectedTags, function (val) {
+                return val !== tagID;
+            })
+        }
+        console.log(selectedTags);
+    })
+}
+
+caseFilration();
+
+
+
+AOS.init();

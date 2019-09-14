@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo-favicon.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <div class="page media" id="pageTop">
-    <header class="header scroll_section">
+    <header class="header">
         <div class="container">
             <div class="header_top">
                 <div class="container">
@@ -65,10 +66,10 @@
             </div>
             <div class="header_body">
                 <div class="header_title__wrap">
-                    <div class="title_m">медиапартнеры</div>
+                    <div class="title_m" data-aos="zoom-in">медиапартнеры</div>
                 </div>
-                <div class="media_block">
-                    Наши партнеры  — самые популярные медиааккаунты Украины, с которыми мы сотрудничаем на эксклюзивных правах и родственных отношениях.
+                <div class="media_block" data-aos="zoom-in" data-aos-delay="100">
+                    Наши партнеры  — самые популярные медиааккаунты Украины, <br class="br_toHide">с которыми мы сотрудничаем на эксклюзивных правах<br class="br_toHide"> и родственных отношениях.
                     <div class="badge sm">
                         <div class="dot"></div>
                         <div class="text">oh my god</div>
@@ -82,9 +83,9 @@
 
     <section class="bloggers">
         <div class="container">
-            <div class="section_title">
+            <div class="section_title" data-aos="fade-right">
                 блогеры
-                <h3 class="title--sm">
+                <h3 class="title--sm" data-aos="fade-right">
                     Блогеры — кумиры нового поколения. <br>
                     Мы это поддерживаем и способствуем развитию блогосферы в Украине <br>
                     не только внутри нашего агентства, но и для многих брендов. <br>
@@ -225,9 +226,9 @@
 
     <section class="channels">
         <div class="container">
-            <div class="section_title">
+            <div class="section_title" data-aos="fade-right">
                 каналы
-                <h3 class="title--sm">
+                <h3 class="title--sm" data-aos="fade-right">
                     Опыт на словах не раздобыть. Все наши каналы — созданные с нуля <br> медиаактивы, которые сейчас — популярные и масштабные проекты. <br>Мы любим их всем сердцем!
 
                 </h3>
@@ -382,12 +383,16 @@
                         <div class="dot"></div>
                     </div>
                 </div>
-                <div class="media_block--wrap">
+                <div class="media_block--wrap" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="500">
                     <div class="media_block sm">
                         <div class="title">50+ млн</div>
                         <div class="text">аудитории на ютуб с партнерами</div>
                     </div>
-                    <div class="media_block sm">
+                    <div class="media_block sm" data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="500">
                         <div class="title">20+ млн</div>
                         <div class="text">аудитории в инстаграм с партнерами</div>
                     </div>
@@ -408,7 +413,8 @@
         <div class="line bottom yellow">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •</div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
         <div class="container">
             <button class="btn white contactUsPop">написать нам</button>
             <div class="contacts_cols">
@@ -466,5 +472,6 @@
 <script src="libs/jquery_v3.2.1/jquery.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </html>
