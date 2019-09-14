@@ -194,25 +194,36 @@ $('.to_top').on('click', function(event) {
     event.preventDefault();
     targetedScroll('pageTop');
 });
-
+//stategy mediabuing video prod
 
 //case filtration
-
 function caseFilration() {
-    var selectedTags = [];
+    let allowed = ['videoProd', 'mediaBuying', 'strategy'];
 
     $('.tag').click(function () {
-        var tagID = $(this).attr('id');
-        if($.inArray(tagID, selectedTags) === -1) {
-            selectedTags.push(tagID);
-        } else {
-            selectedTags = $.grep(selectedTags, function (val) {
-                return val !== tagID;
-            })
+        var tagID = $(this)[0].id;
+        if($.inArray(tagID, allowed) !== -1) {
+            if($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+                filterAimation();
+            } else {
+                $(this).addClass('selected');
+                filterAimation();
+            }
         }
-        console.log(selectedTags);
     })
 }
+
+function filterAimation() {
+    $('.cases_gallery').animate({
+        opacity: 0
+    },300, function () {
+        $(this).animate({
+            opacity: 1
+        },300)
+    })
+}
+
 
 caseFilration();
 

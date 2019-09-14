@@ -588,10 +588,21 @@
     padding-bottom: 60px; }
     .partners .partners_about .media_block--wrap .sm {
       padding: 0.8em 5em; }
-  .gallery .item .text .info .name {
-    font-size: 15px; }
-  .gallery .item .text .info .position {
-    font-size: 10px; }
+  .gallery .item .text .info {
+    margin-left: 0; }
+    .gallery .item .text .info .name {
+      font-size: 15px; }
+    .gallery .item .text .info .position {
+      font-size: 10px; }
+  .bloggers {
+    padding-top: 40px;
+    padding-bottom: 0; }
+    .bloggers .gallery {
+      margin-top: 40px;
+      margin-bottom: 0; }
+  .channels .gallery {
+    margin-top: 40px;
+    margin-bottom: 0; }
   .to_all .link .arr svg {
     width: 55px; }
   .to_all .link .text {
@@ -622,33 +633,41 @@
       margin-bottom: 13px; }
   .page_case .tag_list .btn {
     max-width: unset; }
-  .page_case .results .table .col {
-    padding: 20px; }
-    .page_case .results .table .col .title {
-      font-size: 20px; }
-    .page_case .results .table .col .text {
-      font-size: 15px;
-      line-height: 18px;
-      max-width: 170px; }
-    .page_case .results .table .col .badge {
-      bottom: -130px;
-      right: -110%;
-      padding: 0;
-      max-width: 100px; }
-      .page_case .results .table .col .badge .text {
+  .page_case .results {
+    padding-bottom: 0; }
+    .page_case .results .table .col {
+      padding: 20px; }
+      .page_case .results .table .col .title {
+        font-size: 20px; }
+      .page_case .results .table .col .text {
+        font-size: 15px;
+        line-height: 18px;
+        max-width: 170px; }
+      .page_case .results .table .col .badge {
+        bottom: -130px;
+        right: -110%;
+        padding: 0;
+        max-width: 100px; }
+        .page_case .results .table .col .badge .text {
+          font-size: 10px; }
+    .page_case .results .table.table_two {
+      margin: 40px auto; }
+      .page_case .results .table.table_two .col .badge {
+        width: 100px;
+        right: -105%;
+        bottom: -22px; }
+        .page_case .results .table.table_two .col .badge .text {
+          font-size: 10px; }
+  .page_case .cases_done {
+    padding: 40px 0; }
+    .page_case .cases_done .to_all {
+      margin-top: 10px; }
+    .page_case .cases_done .table .col .row {
+      margin-bottom: 14px; }
+      .page_case .cases_done .table .col .row .title {
         font-size: 10px; }
-  .page_case .results .table.table_two .col .badge {
-    width: 100px;
-    right: -105%;
-    bottom: -22px; }
-    .page_case .results .table.table_two .col .badge .text {
-      font-size: 10px; }
-  .page_case .cases_done .table .col .row {
-    margin-bottom: 14px; }
-    .page_case .cases_done .table .col .row .title {
-      font-size: 14px; }
-    .page_case .cases_done .table .col .row .list .item {
-      font-size: 14px; }
+      .page_case .cases_done .table .col .row .list .item {
+        font-size: 10px; }
   .popup-container {
     padding: 20px; }
     .popup-container .form {

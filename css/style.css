@@ -359,7 +359,9 @@ html {
       .cases .cases_taglist .tag:last-child {
         margin-right: 0; }
       .cases .cases_taglist .tag.selected {
-        background: red; }
+        color: var(--mBlack);
+        border-color: var(--mBlack);
+        background: var(--mYellow); }
   .cases .cases_gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -914,6 +916,8 @@ html {
     flex-direction: row;
     align-items: center; }
     .page_case .header .header_body .case_logo {
+      display: flex;
+      justify-content: center;
       width: 50%; }
       .page_case .header .header_body .case_logo img {
         width: 100%;
@@ -999,7 +1003,8 @@ html {
       -moz-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
       -o-transform: rotate(-10deg);
-      transform: rotate(-10deg); }
+      transform: rotate(-10deg);
+      padding: 0; }
       .page_case .centred_block .badge .text {
         color: var(--mYellow); }
       .page_case .centred_block .badge .dot {
@@ -1029,6 +1034,10 @@ html {
           z-index: 1; }
           .page_case .results .table .col .badge .text {
             font-size: 18px; }
+          .page_case .results .table .col .badge .dot:first-child {
+            left: 15px; }
+          .page_case .results .table .col .badge .dot:last-child {
+            right: 15px; }
         .page_case .results .table .col:nth-child(1) {
           border-right: none; }
         .page_case .results .table .col:nth-child(2) {
