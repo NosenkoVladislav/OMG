@@ -222,10 +222,12 @@ html {
     z-index: 3; }
     .header .header_body .header_title__wrap .title_l {
       font-size: 130px;
-      margin-bottom: 0.07em; }
+      margin-bottom: 0.07em;
+      font-weight: 800; }
     .header .header_body .header_title__wrap .title_m {
       font-size: 70px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 800; }
     .header .header_body .header_title__wrap .title_s {
       font-size: 40px;
       margin-top: 0.6em; }
