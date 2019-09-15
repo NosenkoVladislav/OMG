@@ -343,7 +343,10 @@
     bottom: -30px;
     right: -30px; }
   .page_contacts .header .container .header_body {
-    margin-top: 0; } }
+    margin-top: 0; }
+  #preloader .bottom div {
+    width: 100px;
+    margin-right: 50px; } }
 
 @media (max-width: 600px) {
   .section_title {
@@ -697,8 +700,15 @@
     margin-top: 100px; }
     .page_contacts .header .container .header_body .header_btn__wrap {
       margin-top: 20px;
-      margin-bottom: 0; } }
-
-#caseInWork .title .badge {
-  max-width: 175px;
-  font-size: 15px; }
+      margin-bottom: 0; }
+  #caseInWork .title .badge {
+    max-width: 175px;
+    font-size: 15px; }
+  #preloader .logo {
+    max-width: 400px;
+    margin: 0 10%; }
+  #preloader .text {
+    font-size: 15px; }
+  #preloader .bottom div {
+    width: 50px;
+    font-size: 10px; } }

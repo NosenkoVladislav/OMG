@@ -1,5 +1,3 @@
-
-
 $('.wedo_slider').on('init afterChange', function (event, slick, currentSlide, nextSlide) {
     let cur = slick.currentSlide,
         all = slick.slideCount;

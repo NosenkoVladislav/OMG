@@ -1097,3 +1097,46 @@ html {
       bottom: 0; }
   .page_case .footer {
     background: var(--mBlack); }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: ease-out .5s;
+  -moz-transition: ease-out .5s;
+  -ms-transition: ease-out .5s;
+  -o-transition: ease-out .5s;
+  transition: ease-out .5s; }
+  #preloader.hidden {
+    opacity: 0;
+    z-index: -1; }
+  #preloader .logo {
+    max-width: 540px; }
+    #preloader .logo img {
+      width: 100%; }
+  #preloader .text {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 40px; }
+  #preloader .bottom {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end; }
+    #preloader .bottom div {
+      font-size: 20px;
+      font-weight: 200;
+      color: #fff;
+      width: 200px;
+      margin-right: 70%; }
