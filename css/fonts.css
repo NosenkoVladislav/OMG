@@ -1,22 +1,8 @@
 @font-face {
 	font-family: 'HelveticaNeue';
-	src: url('../assets/fonts/HelveticaNeueCyr-Light.eot');
-	src: local('HelveticaNeueCyr-Light'),
-	url('../assets/fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-	url('../assets/fonts/HelveticaNeueCyr-Light.woff') format('woff'),
-	url('../assets/fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	src: url('../assets/fonts/HELVETICANEUECYR-ROMAN.OTF');
+	src: local('HELVETICANEUECYR-ROMAN');
 	font-weight: 200;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'HelveticaNeue';
-	src: url('../assets/fonts/HelveticaNeueCyr-Medium.eot');
-	src: local('HelveticaNeueCyr-Medium'),
-		url('../assets/fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../assets/fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-		url('../assets/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
-	font-weight: 500;
 	font-style: normal;
 }
 
