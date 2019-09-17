@@ -1239,7 +1239,8 @@ html {
         background: linear-gradient(rgba(0, 0, 0, 0), #000);
         z-index: 1;
         bottom: 0;
-        left: 0; }
+        left: 0;
+        pointer-events: none; }
       .alyona .about .image img {
         width: 100%; }
       .alyona .about .image .text {
