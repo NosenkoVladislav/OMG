@@ -346,7 +346,34 @@
     margin-top: 0; }
   #preloader .bottom div {
     width: 100px;
-    margin-right: 50px; } }
+    margin-right: 50px; }
+  .alyona .about {
+    grid-template-columns: repeat(2, 1fr); }
+    .alyona .about .image .text .arr {
+      display: none; }
+    .alyona .about .info .text {
+      font-size: 25px;
+      line-height: 27px; } }
+
+@media (max-width: 720px) {
+  .alyona {
+    padding-top: 60px;
+    padding-bottom: 20px; }
+    .alyona .about {
+      display: flex;
+      flex-direction: column; }
+      .alyona .about .image .badge {
+        top: 0;
+        right: -15px;
+        bottom: unset;
+        -webkit-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        transform: rotate(15deg); }
+      .alyona .about .info {
+        margin-top: 20px;
+        padding: 0; } }
 
 @media (max-width: 600px) {
   .section_title {
@@ -711,4 +738,25 @@
     font-size: 15px; }
   #preloader .bottom div {
     width: 50px;
-    font-size: 10px; } }
+    font-size: 10px; }
+  .alyona {
+    padding-bottom: 0; }
+    .alyona .about .image .text .info .name {
+      font-size: 15px;
+      margin-bottom: 8px; }
+    .alyona .about .image .text .info .position {
+      font-size: 10px; }
+    .alyona .about .image .badge {
+      max-width: 100px;
+      font-size: 10px;
+      padding: 4px 0; }
+      .alyona .about .image .badge .dot {
+        width: 4px;
+        height: 4px; }
+        .alyona .about .image .badge .dot:first-child {
+          left: 10px; }
+        .alyona .about .image .badge .dot:last-child {
+          right: 10px; }
+    .alyona .about .info .text {
+      font-size: 15px;
+      line-height: 1.1em; } }

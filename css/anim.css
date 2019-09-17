@@ -5,3 +5,9 @@
     left: -100%; }
   100% {
     left: 0; } }
+
+@keyframes ticker {
+  0% {
+    transform: translate(0%, 0); }
+  100% {
+    transform: translate(-26.05vw, 0); } }

@@ -25,7 +25,8 @@ html {
   padding: 16px;
   width: 430px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none !important; }
   .btn.white {
     border: 2px solid #fff;
     color: #fff; }
@@ -257,6 +258,16 @@ html {
       overflow: hidden;
       bottom: 200px;
       z-index: 1; }
+      .header .header_lines .line .line-text {
+        white-space: nowrap;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker;
+        animation-name: ticker;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s; }
       .header .header_lines .line.white {
         background: #fff; }
       .header .header_lines .line.yellow {
@@ -1165,3 +1176,62 @@ html {
       color: #fff;
       width: 200px;
       margin-right: 70%; }
+
+.alyona {
+  padding: 90px 0; }
+  .alyona .about {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+    .alyona .about .image {
+      position: relative; }
+      .alyona .about .image:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(rgba(0, 0, 0, 0), #000);
+        z-index: 1;
+        bottom: 0;
+        left: 0; }
+      .alyona .about .image img {
+        width: 100%; }
+      .alyona .about .image .text {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        z-index: 2; }
+        .alyona .about .image .text .arr {
+          margin-right: 16px; }
+        .alyona .about .image .text .info {
+          color: #fff;
+          position: relative; }
+          .alyona .about .image .text .info .name {
+            text-transform: uppercase;
+            font-size: 20px; }
+          .alyona .about .image .text .info .position {
+            font-size: 15px; }
+      .alyona .about .image .badge {
+        position: absolute;
+        bottom: -6px;
+        right: -70px;
+        width: 175px;
+        -webkit-transform: rotate(-23deg);
+        -moz-transform: rotate(-23deg);
+        -ms-transform: rotate(-23deg);
+        -o-transform: rotate(-23deg);
+        transform: rotate(-23deg);
+        z-index: 2; }
+        .alyona .about .image .badge .text {
+          position: relative;
+          bottom: unset; }
+    .alyona .about .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 14px; }
+      .alyona .about .info .text {
+        font-size: 30px;
+        line-height: 33px;
+        color: #fff; }
