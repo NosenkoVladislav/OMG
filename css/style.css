@@ -267,7 +267,9 @@ html {
         -webkit-animation-name: ticker;
         animation-name: ticker;
         -webkit-animation-duration: 5s;
-        animation-duration: 5s; }
+        animation-duration: 5s;
+        position: relative;
+        top: 1px; }
       .header .header_lines .line.white {
         background: #fff; }
       .header .header_lines .line.yellow {
