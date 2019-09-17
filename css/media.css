@@ -216,7 +216,7 @@
   .portfolio .header .header_body .header_btn__wrap {
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 70px; }
+    margin-top: 100px; }
     .portfolio .header .header_body .header_btn__wrap .case_box {
       padding-top: 40px;
       left: 0;
@@ -347,6 +347,13 @@
   #preloader .bottom div {
     width: 100px;
     margin-right: 50px; }
+  #preloader .line.line-one {
+    -webkit-transform: rotate(65.3deg) translateY(35vh);
+    -moz-transform: rotate(65.3deg) translateY(35vh);
+    -ms-transform: rotate(65.3deg) translateY(35vh);
+    -o-transform: rotate(65.3deg) translateY(35vh);
+    transform: rotate(65.3deg) translateY(35vh);
+    z-index: 2; }
   .alyona .about {
     grid-template-columns: repeat(2, 1fr); }
     .alyona .about .image .text .arr {
@@ -408,6 +415,10 @@
     padding-bottom: 100px; }
     .media .header .container {
       min-height: auto; }
+      .media .header .container .header_body {
+        margin-top: 100px; }
+      .media .header .container .media_block {
+        margin-top: 40px; }
   .header .header_body {
     justify-content: center; }
     .header .header_body .header_title__wrap {
@@ -589,19 +600,21 @@
       height: 55px; }
       .footer .to_top svg path {
         fill: var(--mYellow); }
-  .portfolio .header .header_body .header_btn__wrap .case_box .case_item {
-    font-size: 15px; }
-    .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge {
-      font-size: 10px;
-      max-width: 100px;
-      padding: 4px; }
-      .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot {
-        width: 4px;
-        height: 4px; }
-        .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot:nth-child(1) {
-          left: 6px; }
-        .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot:nth-child(3) {
-          right: 6px; }
+  .portfolio .header .header_body {
+    margin-top: 80px; }
+    .portfolio .header .header_body .header_btn__wrap .case_box .case_item {
+      font-size: 15px; }
+      .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge {
+        font-size: 10px;
+        max-width: 100px;
+        padding: 4px; }
+        .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot {
+          width: 4px;
+          height: 4px; }
+          .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot:nth-child(1) {
+            left: 6px; }
+          .portfolio .header .header_body .header_btn__wrap .case_box .case_item .badge .dot:nth-child(3) {
+            right: 6px; }
   .media_block {
     padding: 15px;
     font-size: 15px;
@@ -731,6 +744,21 @@
   #caseInWork .title .badge {
     max-width: 175px;
     font-size: 15px; }
+  #confirmPopup .popup-container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  #confirmPopup .title {
+    margin-bottom: 0; }
+  #confirmPopup .badge {
+    width: 100px; }
+    #confirmPopup .badge.one {
+      top: 0; }
+    #confirmPopup .badge .text {
+      font-size: 10px; }
+    #confirmPopup .badge .dot:first-child {
+      left: 12px; }
+    #confirmPopup .badge .dot:first-child {
+      right: 12px; }
   #preloader .logo {
     max-width: 400px;
     margin: 0 10%; }
@@ -739,6 +767,13 @@
   #preloader .bottom div {
     width: 50px;
     font-size: 10px; }
+  #preloader .line.line-one {
+    -webkit-transform: rotate(65.3deg) translateY(25vh);
+    -moz-transform: rotate(65.3deg) translateY(25vh);
+    -ms-transform: rotate(65.3deg) translateY(25vh);
+    -o-transform: rotate(65.3deg) translateY(25vh);
+    transform: rotate(65.3deg) translateY(25vh);
+    z-index: 2; }
   .alyona {
     padding-bottom: 0; }
     .alyona .about .image .text .info .name {
@@ -760,3 +795,32 @@
     .alyona .about .info .text {
       font-size: 15px;
       line-height: 1.1em; } }
+
+.mfp-fade .mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }

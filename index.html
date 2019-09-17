@@ -26,6 +26,12 @@
             <div class="location">KYIV</div>
             <div class="year">2019</div>
         </div>
+        <div class="line line-one" data-aos="zoom-in">
+            • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •
+        </div>
+        <div class="line line-two" data-aos="zoom-in">
+            • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •
+        </div>
     </div>
     <div class="page" id="pageTop">
         <header class="header scroll_section">
@@ -76,22 +82,22 @@
                     </div>
                 </div>
                 <div class="header_body">
-                    <div class="header_title__wrap">
-                        <div class="title_l" data-aos="zoom-in" >OMG</div>
-                        <div class="title_m" data-aos="zoom-in" data-aos-delay="100">комьюнити агентство</div>
-                        <div class="title_s" data-aos="zoom-in" data-aos-delay="200">объединяем аудиторию для вашего бренда</div>
+                    <div class="header_title__wrap" id="ttlWrap">
+                        <!--<div class="title_l" data-aos="zoom-in" >OMG</div>-->
+                        <!--<div class="title_m" data-aos="zoom-in" data-aos-delay="100">комьюнити агентство</div>-->
+                        <!--<div class="title_s" data-aos="zoom-in" data-aos-delay="200">объединяем аудиторию для вашего бренда</div>-->
+                    <!--</div>-->
+                        <div class="title_l" data-aos="zoom-in" data-aos-delay="2400">OMG</div>
+                        <div class="title_m" data-aos="zoom-in" data-aos-delay="2500">комьюнити агентство</div>
+                        <div class="title_s" data-aos="zoom-in" data-aos-delay="2600">объединяем аудиторию для вашего бренда</div>
                     </div>
                     <div class="header_btn__wrap">
-                        <button class="btn white contactUsPop" data-aos="zoom-in" data-aos-delay="500">
+                        <button class="btn white contactUsPop" data-aos="zoom-in" data-aos-delay="2700" id="btnToShow">
                             написать нам
                         </button>
                     </div>
                 </div>
             </div>
-            <!--<div class="header_lines">-->
-                <!--<div class="line yellow">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god</div>-->
-                <!--<div class="line white">oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god • oh my god •oh my god • oh my god • oh my god • oh my god • oh my god • oh my god</div>-->
-            <!--</div>-->
             <div class="header_lines">
                 <div class="line yellow">
                     <div class="line-text">
@@ -579,6 +585,30 @@
         </div>
     </div>
 
+    <div id="confirmPopup" class="mfp-hide">
+        <div class="popup-container">
+            <div class="popup-close mfp-close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.0001 1.41L12.5901 0L7.00003 5.59L1.41001 0L0 1.41L5.59002 7L0 12.59L1.41001 14L7.00003 8.41L12.5901 14L14.0001 12.59L8.41004 7L14.0001 1.41Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="title">
+                Ооо!<br>
+                Свяжемся с вами сегодня же.<br>
+                До скорого!
+            </div>
+            <div class="badge yellow sm one">
+                <div class="dot"></div>
+                <div class="text">oh my god</div>
+                <div class="dot"></div>
+            </div>
+            <div class="badge yellow sm two">
+                <div class="dot"></div>
+                <div class="text">oh my god</div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
@@ -589,31 +619,51 @@
 </style>
 
 <script>
+    function setDataAttr(val) {
+        let root = document.querySelector('#ttlWrap'),
+            title_l = root.querySelector('.title_l'),
+            title_m = root.querySelector('.title_m'),
+            title_s = root.querySelector('.title_s'),
+            btn = document.querySelector('#btnToShow');
+
+        if(val) {
+            title_l.setAttribute('data-aos-delay','0');
+            title_m.setAttribute('data-aos-delay','100');
+            title_s.setAttribute('data-aos-delay','200');
+            btn.setAttribute('data-aos-delay','300');
+        }
+    }
+
     function loadData() {
         return new Promise((resolve, reject) => {
             setTimeout(resolve, 2000);
         })
     }
 
+    loadData();
+
     if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
         sessionStorage.setItem( 'doNotShow', true );
         loadData()
             .then(() => {
                 let doc = document.getElementsByTagName('html')[0];
-                doc.style.overflow = 'visible'
-                let preloaderEl = document.getElementById('preloader');
-                preloaderEl.classList.add('hidden');
+                doc.style.overflow = 'visible';
+                setDataAttr(false);
+                document.getElementById('preloader').classList.add('hidden');
             })
     } else {
+        setDataAttr(true);
         document.getElementsByTagName('html')[0].style.overflow = 'visible'
         document.getElementById('preloader').remove()
     }
-
 </script>
 
 <script src="libs/jquery_v3.2.1/jquery.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
 <script src="js/main.js"></script>
+
 </html>

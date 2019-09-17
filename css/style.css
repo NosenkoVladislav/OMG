@@ -763,6 +763,33 @@ html {
 #vacancyPopup {
   margin-top: 2vw; }
 
+#confirmPopup {
+  position: relative; }
+  #confirmPopup .popup-container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  #confirmPopup .title {
+    margin-bottom: 0; }
+  #confirmPopup .badge {
+    position: absolute;
+    width: 175px; }
+    #confirmPopup .badge.one {
+      top: -20px;
+      left: 40%;
+      -webkit-transform: rotate(26deg);
+      -moz-transform: rotate(26deg);
+      -ms-transform: rotate(26deg);
+      -o-transform: rotate(26deg);
+      transform: rotate(26deg); }
+    #confirmPopup .badge.two {
+      right: 0;
+      bottom: 0;
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
+
 .portfolio .header .header_body {
   justify-content: unset; }
   .portfolio .header .header_body .header_btn__wrap {
@@ -1178,6 +1205,24 @@ html {
       color: #fff;
       width: 200px;
       margin-right: 70%; }
+  #preloader .line {
+    background: var(--mYellow);
+    position: fixed; }
+    #preloader .line.line-one {
+      -webkit-transform: rotate(65.3deg) translateY(75vh);
+      -moz-transform: rotate(65.3deg) translateY(75vh);
+      -ms-transform: rotate(65.3deg) translateY(75vh);
+      -o-transform: rotate(65.3deg) translateY(75vh);
+      transform: rotate(65.3deg) translateY(75vh);
+      z-index: 2; }
+    #preloader .line.line-two {
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      bottom: 10vh;
+      z-index: 1; }
 
 .alyona {
   padding: 90px 0; }
@@ -1237,3 +1282,30 @@ html {
         font-size: 30px;
         line-height: 33px;
         color: #fff; }
+      .alyona .about .info .to_all .text {
+        font-size: 25px; }
+
+.Cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-filter: url("#goo");
+  filter: url("#goo"); }
+  .Cursor span {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #fff;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }

@@ -9,7 +9,7 @@ require 'vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
-    $name = $_POST['nameOrMail'];
+    $nameOrMail = $_POST['nameOrMail'];
     $msg = $_POST['message'];
 
     //Server settings
@@ -28,7 +28,7 @@ $mail = new PHPMailer(true);
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New request!';
-    $mail->Body = '<div>Name or mail: '.$name.'</div><br><div>Email: '.$msg.'</div>';
+    $mail->Body = '<div>Name or mail: '.$nameOrMail.'</div><br><div>Email: '.$msg.'</div>';
     $mail->send();
 ?>
 
