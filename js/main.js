@@ -261,9 +261,9 @@ function cursorCustom() {
     cursor.setAttribute('id','cursor');
     cursor.classList.add('Cursor');
     body.prepend(cursor);
-    const amount = 15;
-    const sineDots = Math.floor(amount * 0.5);
-    const width = 20;
+    const amount = 20;
+    const sineDots = Math.floor(amount * 0.3);
+    const width = 26;
     const idleTimeout = 150;
     let lastFrame = 0;
     let mousePosition = {x: 0, y: 0};
@@ -385,3 +385,4 @@ function cursorCustom() {
 
 
 cursorCustom();
+
